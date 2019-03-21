@@ -1,0 +1,15 @@
+{
+  "name": "portal_noticias",
+  "version": "1.0.0",
+  "main": "noticias.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rodrigo de morais santana",
+  "license": "ISC",
+  "description": "site de noticias",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}
