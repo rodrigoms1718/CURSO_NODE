@@ -3,7 +3,9 @@ module.exports = function (app) {
         //referencia que faz a conexao com o BD.
         let connection = app.config.dbConnection();
 
-        connection.query('select * from noticias where id_noticia = 2', function (error, result) {
+        let noticiasModel = app.app.models.noticiasModel;
+
+        noticiasModel.getNoticia(connection, function (error, result) {
             res.render('noticias/noticia', { noticia: result });
         });
     });
